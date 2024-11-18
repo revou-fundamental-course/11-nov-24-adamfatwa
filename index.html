@@ -5,65 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="js\script.js">
 </head>
 <body>
     <header class="main-header">
         <div class="main-logo"></div>
 
         <nav>
-            <a class="navbar" href="#">Home</a>
-            <a class="navbar" href="#">Our Package</a>
+            <a class="navbar" href="#home">Home</a>
+            <a class="navbar" href="#our-package">Our Package</a>
             <a class="navbar" href="#">Call Us!</a>
         </nav>
     </header>
-    <hr>
 
     <main>
-        <header class="main-article-header">
+        <header class="main-article-header" id="home">
             <h1>Your Truted Travel Agent</h1>
             <h3>Your hapiness is our happiness</h3>
         </header>
 
         <article class="main-article">
-            <!-- Banner Autoslide -->
-            <section class="container-banner">
-                <div class="banner-autoslide"></div>
+            <section class="flex-container">
+                <div class="container-banner">
+                    <div class="banner-autoslide"></div>
+                    
+                    <!-- user review -->
+                    <div class="review">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
+        
+                        <div class="review-profile">
+                            <div class="profile-pic"></div>
+                            <div>
+                                <p class="profile-name">Reviewer Name</p>
+                                <p class="profile-occupation">Occupation, Age</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="custom-hr">
+                    
+                    <!-- Benefits List -->
+                    <div class="benefit">
+                        <h3>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h3>
+                        
+                        <div class="benefit-list">
+                            <div class="benefit-icon"></div>
+                            <div>
+                                <p class="benefit-title">1st Benefit</p>
+                                <p class="benefit-desc">lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="benefit-list">
+                            <div class="benefit-icon"></div>
+                            <div>
+                                <p class="benefit-title">2nd Benefit</p>
+                                <p class="benefit-desc">lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="benefit-list">
+                            <div class="benefit-icon"></div>
+                            <div>
+                                <p class="benefit-title">3rd Benefit</p>
+                                <p class="benefit-desc">lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <p>Lorem ipsum dolor, sit amet consectetur</p>
-            </section>
-    
-            <!-- Form Conta Us! -->
-            <section class="contact-banner">
-                <h2>Contact Us!</h2>
-                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
-
-                <div class="contact-form">
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="nama">Your Name:</label> <br>
-                            <input type="text" name="nama" id="nama" placeholder="First and Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address:</label> <br>
-                            <input type="text" name="email" id="email" placeholder="example@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="opsi">What are you interested in? </label> <br>
-                            <select name="opsi" id="opsi">
-                                <option value="" disabled selected hidden>Select option</option>
-                                <option value="">Destination 1</option>
-                                <option value="">Destination 2</option>
-                                <option value="">Destination 3</option>
-                            </select>
-                        </div>
-                    </form>
+                </div>
+        
+                <!-- Form Contact Us -->
+                <div class="contact-banner">
+                    <h2>Contact Us!</h2>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+        
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="nama">Your Name:</label> <br>
+                                <input type="text" name="nama" id="nama" placeholder="First and last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address:</label> <br>
+                                <input type="text" name="email" id="email" placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="opsi">What are you interested in? </label> <br>
+                                <select name="opsi" id="opsi">
+                                    <option value="" disabled selected hidden>Select option</option>
+                                    <option value="">Destination 1</option>
+                                    <option value="">Destination 2</option>
+                                    <option value="">Destination 3</option>
+                                </select>
+                            </div>
+        
+                            <button class="submit">SEND</button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </article>
+        
 
         <article>
-            <header class="our-package-header">
+            <header class="our-package-header" id="our-package">
                 <h1>Our Package</h1>
             </header>
 
@@ -76,5 +119,7 @@
     <footer>
         <span>Made by AdamFatwa@RevoU2024</span>
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
