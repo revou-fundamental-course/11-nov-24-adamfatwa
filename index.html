@@ -8,16 +8,73 @@
     <link rel="stylesheet" href="js\script.js">
 </head>
 <body>
-    <header>
+    <header class="main-header">
+        <div class="main-logo"></div>
 
+        <nav>
+            <a class="navbar" href="#">Home</a>
+            <a class="navbar" href="#">Our Package</a>
+            <a class="navbar" href="#">Call Us!</a>
+        </nav>
     </header>
+    <hr>
 
     <main>
+        <header class="main-article-header">
+            <h1>Your Truted Travel Agent</h1>
+            <h3>Your hapiness is our happiness</h3>
+        </header>
 
+        <article class="main-article">
+            <!-- Banner Autoslide -->
+            <section class="container-banner">
+                <div class="banner-autoslide"></div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur</p>
+            </section>
+    
+            <!-- Form Conta Us! -->
+            <section class="contact-banner">
+                <h2>Contact Us!</h2>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="nama">Your Name:</label> <br>
+                            <input type="text" name="nama" id="nama" placeholder="First and Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label> <br>
+                            <input type="text" name="email" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="opsi">What are you interested in? </label> <br>
+                            <select name="opsi" id="opsi">
+                                <option value="" disabled selected hidden>Select option</option>
+                                <option value="">Destination 1</option>
+                                <option value="">Destination 2</option>
+                                <option value="">Destination 3</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <header class="our-package-header">
+                <h1>Our Package</h1>
+            </header>
+
+            <section class="our-package-content">
+                <h2>Konten'a</h2>
+            </section>
+        </article>
     </main>
 
     <footer>
-        
+        <span>Made by AdamFatwa@RevoU2024</span>
     </footer>
 </body>
 </html>
