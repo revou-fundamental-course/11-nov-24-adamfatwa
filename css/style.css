@@ -13,7 +13,6 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
-    /* margin: 0px 32px 0px 32px; */
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -27,6 +26,7 @@ body {
     width: 75px;
     background-image: url(https://picsum.photos/200);
     background-position: center;
+    background-size: cover;
     border-radius: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -63,7 +63,13 @@ nav {
 
 .main-article-header {
     text-align: center;
+    font-size: 23px;
     margin-top: 100px;
+}
+
+.main-article-header > p {
+    color: #537089;
+    text-align: center;
 }
 
 .main-article {
@@ -97,13 +103,13 @@ nav {
 }
 
 .review {
-    text-align: center;
     padding: 15px;
 }
 
 .review > blockquote {
     font-size: 18px;
     font-style: italic;
+    text-align: center;
     color: #555;
     margin-bottom: 15px;
 }
@@ -144,7 +150,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin: 0px 0px 20px 0px;
+    margin: 30px auto;
 }
 
 .benefit-icon {
@@ -221,14 +227,11 @@ form > button:hover {
     align-content: center;
 }
 
-.our-package-content {
-    text-align: center;
-}
-
 .destination {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px auto;
 }
 
 .destination-list {
@@ -259,6 +262,72 @@ form > button:hover {
     margin: 0;
 }
 
-footer {
+.headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.closing-headline {
     text-align: center;
+    font-size: 25px;
+}
+
+.headline > p {
+    color: #537089;
+    text-align: center;
+    margin: 20px 0;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.headline > button {
+    height: 45px;
+    width: 20%;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: #2b3a67;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.headline > button:hover {
+    background-color: #1f2b4d;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    /* gap: 20px; */
+}
+
+.footer-logo {
+    width: 75px;
+    height: 75px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.footer-link {
+    display: flex;
+    gap: 15px;
+    margin: 15px auto;
+    color: black;
+}
+
+.footer-link > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-link > a:hover {
+    text-decoration: underline;
 }
