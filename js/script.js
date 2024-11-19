@@ -28,3 +28,33 @@ setInterval(() => {
 //     headlineArticle.after(contactBanner);
 // });
 
+document.querySelector('.submit').addEventListener('click', function (event) {
+    event.preventDefault(); // Mencegah form langsung terkirim
+
+    const nama = document.getElementById('nama').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const opsi = document.getElementById('opsi').value;
+
+    if (nama === '') {
+        alert('Nama tidak boleh kosong.');
+        return;
+    } else if (nama.length > 50) {
+        alert('Nama tidak boleh lebih dari 50 karakter.');
+        return;
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (email === '') {
+        alert('Email tidak boleh kosong.');
+        return;
+    } else if (!emailRegex.test(email)) {
+        alert('Masukkan email yang valid (contoh: name@example.com).');
+        return;
+    }
+    if (opsi === '') {
+        alert('Harap pilih salah satu opsi.');
+        return;
+    }
+
+    alert('Form berhasil dikirim!');
+});
