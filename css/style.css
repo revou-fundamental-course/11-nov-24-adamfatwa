@@ -20,6 +20,7 @@ body {
     width: 100%;
     /* border-bottom: 1px solid #888; */
     background-color: #dceeff;
+    z-index: 30;
 }
 
 .main-logo {
@@ -49,6 +50,7 @@ nav {
     padding: 10px;
     border-left: none;
     background-color: #b2cfeb;
+    z-index: 20;
 }
 
 .navbar:first-of-type {
@@ -95,13 +97,45 @@ nav {
 }
 
 .banner-autoslide {
+    position: relative;
     width: 100%;
     height: 480px;
-    background-image: url(https://picsum.photos/500);
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
     border-radius: 8px;
-    border: 2px solid #ddd;
+}
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    opacity: 25%;
+    z-index: 10;
+}
+
+.nav-button.prev {
+    left: 10px;
+}
+
+.nav-button.next {
+    right: 10px;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .review {
@@ -338,4 +372,55 @@ footer {
 
 .footer-link > a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-logo {
+        height: 40px;
+        width: 40px;
+        margin-top: 8px;
+        margin-bottom: -12px;
+        margin-left: 0px;
+    }
+
+    nav {
+        margin-right: 0px;
+    }
+
+    .navbar {
+        width: 180px;
+        border: 1px solid #d9e4ff;        ;
+    }
+
+    .navbar:first-of-type {
+        border: 1px solid #d9e4ff;        ;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .navbar:last-of-type {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 0px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .banner-autoslide {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
 }

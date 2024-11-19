@@ -26,8 +26,15 @@
         <article class="main-article">
             <section class="flex-container">
                 <div class="container-banner">
-                    <div class="banner-autoslide"></div>
-                    
+                    <div class="banner-autoslide">
+                        <div class="mySlides" style="display: block; background-image: url('https://picsum.photos/800');"></div>
+                        <div class="mySlides" style="background-image: url('https://picsum.photos/801');"></div>
+                        <div class="mySlides" style="background-image: url('https://picsum.photos/802');"></div>
+                        
+                        <button class="nav-button prev" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="nav-button next" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+
                     <!-- user review -->
                     <div class="review">
                         <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</blockquote>
@@ -104,7 +111,7 @@
             </section>
         </article>
         
-
+        <!-- Package -->
         <article>
             <header class="our-package-header" id="our-package">
                 <h1>Our Package</h1>
